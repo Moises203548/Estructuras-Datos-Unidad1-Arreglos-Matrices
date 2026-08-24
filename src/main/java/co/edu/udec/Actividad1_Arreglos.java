@@ -13,5 +13,11 @@ public class Actividad1_Arreglos {
         System.out.print(arreglo[i] + " ");
         }
         System.out.println(---------------------------------------------------------------------------------------);
+
+        System.out.println("Recorrido con for-each:");
+        for (int valor : arreglo) {
+            System.out.print(valor + " ");
+        }
+        System.out.println(---------------------------------------------------------------------------------------);
     }
 }
