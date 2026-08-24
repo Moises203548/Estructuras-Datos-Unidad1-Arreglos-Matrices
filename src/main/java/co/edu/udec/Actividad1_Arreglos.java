@@ -8,5 +8,10 @@ public class Actividad1_Arreglos {
     for (int i = 0; i < arreglo.length; i++){
         arreglo[i] = random.nextInt(1000);
     }
+    System.out.println("Recorrido con for clásico:");
+    for (int i = 0; i < arreglo.length; i++) {
+        System.out.print(arreglo[i] + " ");
+        }
+        System.out.println(---------------------------------------------------------------------------------------);
     }
 }
