@@ -12,12 +12,23 @@ public class Actividad1_Arreglos {
     for (int i = 0; i < arreglo.length; i++) {
         System.out.print(arreglo[i] + " ");
         }
-        System.out.println(---------------------------------------------------------------------------------------);
+        System.out.println("---------------------------------------------------------------------------------------");
 
         System.out.println("Recorrido con for-each:");
         for (int valor : arreglo) {
             System.out.print(valor + " ");
         }
-        System.out.println(---------------------------------------------------------------------------------------);
+        System.out.println("---------------------------------------------------------------------------------------");
+
+        for (int i = 0; i < arreglo.length; i++) {
+            if (arreglo[i] % 2 != 0) {
+                arreglo[i] = 0;
+            }
+        }
+        System.out.println("Después de cambiar impares por cero:");
+        for (int valor : arreglo) {
+            System.out.print(valor + " ");
+        }
+        System.out.println("---------------------------------------------------------------------------------------");
     }
 }
