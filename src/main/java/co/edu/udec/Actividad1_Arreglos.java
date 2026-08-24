@@ -30,5 +30,14 @@ public class Actividad1_Arreglos {
             System.out.print(valor + " ");
         }
         System.out.println("---------------------------------------------------------------------------------------");
+
+        for (int i = 0; i < arreglo.length; i++) {
+            arreglo[i] = arreglo[i] * i;
+        }
+        System.out.println("Después de multiplicar por índice:");
+        for (int valor : arreglo) {
+            System.out.print(valor + " ");
+        }
+        System.out.println("---------------------------------------------------------------------------------------");
     }
 }
