@@ -39,5 +39,22 @@ public class Actividad1_Arreglos {
             System.out.print(valor + " ");
         }
         System.out.println("---------------------------------------------------------------------------------------");
+
+        int buscado = arreglo[3];
+        int posicion = busquedaLineal(arreglo, buscado);
+        if (posicion != -1) {
+            System.out.println("El valor " + buscado + " se encontró en la posición " + posicion);
+        } else {
+            System.out.println("El valor " + buscado + " no se encontró en el arreglo");
+        }
+    }
+
+    public static int busquedaLineal(int[] arreglo, int valor) {
+        for (int i = 0; i < arreglo.length; i++) {
+            if (arreglo[i] == valor) {
+                return i;
+            }
+        }
+        return -1;
     }
 }
