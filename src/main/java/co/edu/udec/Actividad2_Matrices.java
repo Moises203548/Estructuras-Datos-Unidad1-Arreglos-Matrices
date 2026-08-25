@@ -34,5 +34,17 @@ public class Actividad2_Matrices {
             }
         }
         System.out.println("Suma total de los elementos: " + suma);
+
+        int[] filaTemporal = numeros[0];
+        numeros[0] = numeros[numeros.length - 1];
+        numeros[numeros.length - 1] = filaTemporal;
+
+        System.out.println("Matriz despues de intercambiar primera y ultima fila:");
+        for (int i = 0; i < numeros.length; i++) {
+            for (int j = 0; j < numeros[i].length; j++) {
+                System.out.print(numeros[i][j] + "\t");
+            }
+            System.out.println();
+        }
     }
 }
