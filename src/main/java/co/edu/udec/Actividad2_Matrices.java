@@ -1,5 +1,7 @@
 package co.edu.udec;
 
+import java.sql.SQLOutput;
+
 public class Actividad2_Matrices {
     public static void main(String[] args) {
         int[][] numeros = {
@@ -23,5 +25,14 @@ public class Actividad2_Matrices {
             }
             System.out.println();
         }
+
+        System.out.println("Suma de Matriz:");
+        int suma = 0;
+        for (int i = 0; i < numeros.length; i++) {
+            for (int j = 0; j < numeros[i].length; j++) {
+                suma += numeros[i][j];
+            }
+        }
+        System.out.println("Suma total de los elementos: " + suma);
     }
 }
