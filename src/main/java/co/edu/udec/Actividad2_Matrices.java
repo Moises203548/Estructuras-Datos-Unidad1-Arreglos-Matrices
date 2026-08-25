@@ -15,5 +15,13 @@ public class Actividad2_Matrices {
             }
             System.out.println();
         }
+
+        System.out.println("Recorrido por columnas:");
+        for (int j = 0; j < numeros[0].length; j++) {
+            for (int i = 0; i < numeros.length; i++) {
+                System.out.print(numeros[i][j] + "\t");
+            }
+            System.out.println();
+        }
     }
 }
