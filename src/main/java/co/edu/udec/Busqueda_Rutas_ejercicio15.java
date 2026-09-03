@@ -1,7 +1,6 @@
 package co.edu.udec;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class Busqueda_Rutas_ejercicio15 {
     static int numeroFilas, numeroColumnas;
@@ -60,6 +59,23 @@ public class Busqueda_Rutas_ejercicio15 {
                     celdasPorExplorar.add(new int[]{filaVecina, columnaVecina});
                 }
             }
+        }
+
+        System.out.println("Existe una ruta: " + rutaEncontrada);
+
+        if (rutaEncontrada) {
+            List<int[]> ruta = new ArrayList<>();
+            int filaActual = filaSalida, columnaActual = columnaSalida;
+
+            while (!(filaActual == filaInicio && columnaActual == columnaInicio)) {
+                ruta.add(new int[]{filaActual, columnaActual});
+                int filaAnterior = filaOrigen[filaActual][columnaActual];
+                int columnaAnterior = columnaOrigen[filaActual][columnaActual];
+                filaActual = filaAnterior;
+                columnaActual = columnaAnterior;
+            }
+            ruta.add(new int[]{filaInicio, columnaInicio});
+            Collections.reverse(ruta);
         }
     }
 }
