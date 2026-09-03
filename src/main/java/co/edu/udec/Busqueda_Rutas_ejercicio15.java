@@ -76,6 +76,14 @@ public class Busqueda_Rutas_ejercicio15 {
             }
             ruta.add(new int[]{filaInicio, columnaInicio});
             Collections.reverse(ruta);
+            System.out.print("Ruta óptima: ");
+            for (int[] paso : ruta) {
+                System.out.print("(" + paso[0] + "," + paso[1] + ") ");
+            }
+            System.out.println();
+        } else {
+            System.out.println("No fue posible encontrar un camino hacia la salida.");
         }
     }
 }
+
